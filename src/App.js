@@ -6,6 +6,7 @@ import Clock from "./Component/Clock/Clock";
 import Welcome from "./Component/Welcome/Welcome";
 import Contact from "./Component/Contact/Contact";
 import Navigation from "./Component/Navigation/Navigation";
+import Error from "./Component/Error/Error";
 
 function App() {
   return (
@@ -22,9 +23,7 @@ function App() {
           <Route path="/clock" component={Clock} />
           <Route path="/contact" component={Contact} />
           <Route path="/Welcome/:name" component={Welcome} />
-          <Route>
-            <div>Error 404: Page Not Found</div>
-          </Route>
+          <Route component={Error} />
         </Switch>
       </div>
     </Route>
