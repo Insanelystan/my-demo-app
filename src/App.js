@@ -7,6 +7,7 @@ import Welcome from "./Component/Welcome/Welcome";
 import Contact from "./Component/Contact/Contact";
 import Navigation from "./Component/Navigation/Navigation";
 import Error from "./Component/Error/Error";
+import Jeopardy from "./Component/Jeopardy/Jeopardy";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route path="/clock" component={Clock} />
           <Route path="/contact" component={Contact} />
           <Route path="/Welcome/:name" component={Welcome} />
+          <Route path="/Jeopardy" component={Jeopardy} />
+
           <Route component={Error} />
         </Switch>
       </div>

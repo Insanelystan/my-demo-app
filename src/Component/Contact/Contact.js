@@ -25,6 +25,7 @@ class Contact extends Component {
       submitted: true,
     });
   };
+
   resetForm = (event) => {
     this.setState({
       submitted: false,
